@@ -66,6 +66,25 @@ figcaption a {
   
 }
 
+button {
+  height: 1000px;
+  background-color: #801010;
+  width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  font-family: 'Fredoka One';
+
+}
+
+button:hover {
+  cursor: cell;
+  color: black;
+
 a {
   text-decoration: none;
   color: white;
