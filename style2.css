@@ -5,16 +5,22 @@ body {
 
 /* HEADER */
 
-
 .home {
   background-image: url(images/bg-Intro.png);
-
   height: 750px;
   color: white;
   position: absolute;
   top: 0;
 }
 
+.home_2 {
+  height: 480px;
+  color: white;
+}
+
+.logo {
+  width: 30%;
+}
 
 nav ul {
   display: flex;
@@ -33,55 +39,9 @@ nav li {
 
 /* CONTENU */
 
-h2,
-h3 {
+h2 {
   text-align: center;
   font-family: 'Fredoka One', sans-serif;
-}
-
-h2 {
-  margin-top: 100px;
-  font-size: 60px;
-  opacity: 0.8;
-}
-
-.titre_produits {
-  margin-top: 780px;
-}
-
-.ligne1,
-.ligne2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titre_produits {
-  text-align: center;
-}
-
-.imgprod {
-  width: 600px;
-}
-
-figure {
-  width: 600px;
-}
-
-img {
-  width: 400px;
-}
-
-figcaption {
-  background-color: #262626;
-  text-align: center;
-  height: 130px;
-  margin-top: -10px;
-  padding-top: 20px;
-}
-
-figcaption a {
-  color: white;
 }
 
 a {

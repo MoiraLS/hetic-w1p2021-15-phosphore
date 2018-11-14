@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "vagron";
+  src: url ('VARGON.TTF');
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +12,6 @@ body {
   background-image: url(images/bg-Intro.png);
   background-size : cover;
   background-position: center;
-
   height: 480px;
   width: 100vw;
   color: white;
@@ -17,17 +20,32 @@ body {
 }
 
 .logo {
-  width: 50%;
+  width: 40%;
+  padding: 5px 10px;
+  background-color: black;
 }
 
+/* nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
 
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  margin-right: 40px;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 20px;
+} */
 
 /* CONTENU */
 
 h2,
 h3 {
   text-align: center;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: "vagron";
 }
 
 h2 {
