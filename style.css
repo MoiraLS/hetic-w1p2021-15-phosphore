@@ -1,7 +1,8 @@
 @font-face {
-  font-family: "vagron";
-  src: url ('VARGON.TTF');
-}
+  font-family: "Vagron";
+  src: local("VAGRON.TTF") format("TTF");
+        }
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -20,6 +21,10 @@ body {
 }
 
 .logo {
+  width: 50%;
+}
+
+.logo2 {
   width: 40%;
   padding: 5px 10px;
   background-color: black;
@@ -40,12 +45,13 @@ nav li {
   font-size: 20px;
 } */
 
+
 /* CONTENU */
 
 h2,
 h3 {
   text-align: center;
-  font-family: "vagron";
+  font-family: "Vagron";
 }
 
 h2 {
