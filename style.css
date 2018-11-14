@@ -5,11 +5,7 @@ body {
 
 /* HEADER */
 
-@media (max-width: 320px) {
-  .home {
-    height: 430;
-  }
-}
+
 .home {
   background-image: url(images/bg-Intro.png);
   height: 750px;
@@ -19,10 +15,14 @@ body {
 }
 
 @media (max-width: 320px) {
-   .home {
-    height: 1024px; 
-    
+  .home {
+    height: 750px;
+  }
 
+  h2 {
+    font-size: 30px;
+  }
+}
 
 nav ul {
   display: flex;
@@ -39,11 +39,10 @@ nav li {
   font-size: 20px;
 }
 
-
-
 /* CONTENU */
 
-h2,h3 {
+h2,
+h3 {
   text-align: center;
   font-family: 'Fredoka One', sans-serif;
 }
@@ -58,7 +57,8 @@ h2 {
   margin-top: 780px;
 }
 
-.ligne1, .ligne2 {
+.ligne1,
+.ligne2 {
   display: flex;
   justify-content: center;
   align-items: center;
