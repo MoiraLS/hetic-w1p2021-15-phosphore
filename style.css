@@ -13,9 +13,10 @@ body {
 
 
 
+
   /* CONTENU */
 
-h2 {
+h3 {
   text-align: center;
 }
 
@@ -27,7 +28,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   height: 130px;
   background-color: #801010;
   color: white;
