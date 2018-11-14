@@ -105,31 +105,29 @@ nav li {
 
   /* FOOTER */
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: space-around;
-  flex-direction: row;
-  height: 130px;
-  background-color: #801010;
-  color: white;
-  padding: 20px;
-}
-
-.pictos {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-width: 100vw;
-  height: 80px;
-}
-.picto {
-  width: 40px;
-}
-
-footer ul {
-  display : flex;
-  justify-content: f
-  flex-direction: row;
-  list-style-type: none;
-}
+  footer {
+    height: 130px;
+    background-color: #801010;
+    color: white;
+    padding: 20px;
+  }
+  
+  .pictos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .picto {
+    width: 40px;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  
+  footer p {
+    text-align: center;
+  }
