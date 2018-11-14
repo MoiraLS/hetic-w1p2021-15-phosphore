@@ -9,7 +9,7 @@ body {
   background-size : cover;
   background-position: center;
 
-  height: 100vh;
+  height: 480px;
   width: 100vw;
   color: white;
   top: 0;
@@ -78,12 +78,14 @@ button {
   text-align: center;
   font-family: 'Fredoka One';
   border: #262626;
-  margin-left: 35%;  
+  margin-left: 35%; 
+  transition: font-size 1s;
 }
 
-button a:hover {
+button:hover {
   cursor: cell;
   font-size: 15px;
+  
 }
 
 a {
