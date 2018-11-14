@@ -5,7 +5,11 @@ body {
 
   /* HEADER */
 
-
+.home {
+  background-image: url(images/bg-Intro.png);
+  height: 750px;
+  color: white;
+}
 
 
 
