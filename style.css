@@ -15,7 +15,9 @@ body {
 
   /* CONTENU */
 
-
+h2 {
+  text-align: center;
+}
 
 
 
@@ -23,9 +25,9 @@ body {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 130px;
   background-color: #801010;
   color: white;
