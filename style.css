@@ -1,12 +1,13 @@
 @font-face {
   font-family: "Vagron";
-  src: local("vagron.TTF") format("TTF");
+  src: local("vagron.ttf") format("ttf");
         }
 
 body {
   margin: 0;
   box-sizing: border-box;
 }
+
 /* HEADER */
 
 .home {
@@ -193,7 +194,10 @@ footer p {
 }
 
 
-/
+/* PRODUITS */
+ p {
+   
+ }
 
 @media(min-width: 900px) {
   
