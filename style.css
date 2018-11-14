@@ -25,46 +25,83 @@ nav ul {
 nav li {
   margin-right: 40px;
   font-family: 'Fredoka One', sans-serif;
-  float: right;
   font-size: 20px;
 }  
 
   /* CONTENU */
   
-h2, h3 {
-  text-align: center;
-  font-family: 'Fredoka One', sans-serif;
-}
-
-h2 {
-  font-size: 60px;
-  opacity: 0.8;
-}
-
-.produit {
-  margin-top: 750px;
-}
-
-figure {
-  width: 400px;
-}
-
-img {
-  width: 400px;
-}
-
-figcaption {
-  background-color: #262626;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #801010;
-}
+  h2, h3 {
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  h2 {
+    font-size: 60px;
+    opacity: 0.8;
+  }
+  
+  .produits {
+    display: grid;
+    grid-template-rows: 600px 600px;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 40px;
+    margin-top: 750px;
+  }
+  
+  .prod1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  
+  .prod2 {
+    grid-row: 1;
+    grid-column: 2;  
+  }
+  
+  .prod3 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  
+  .prod4 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  
+  .imgprod{
+    width: 400px;
+  }
+  
+  figure {
+    width: 400px;
+  }
+  
+  img {
+    width: 400px;
+  }
+  
+  figcaption {
+    background-color: #262626;
+    text-align: center;
+    height: 130px;
+    margin-top: -10px;
+    padding-top: 20px;
+  }
+  
+  figcaption a {
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    color: #801010;
+  }
 
   /* FOOTER */
 
@@ -81,8 +118,10 @@ footer {
 
 .pictos {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  min-width: 100vw;
+  height: 80px;
 }
 .picto {
   width: 40px;
@@ -90,9 +129,7 @@ footer {
 
 footer ul {
   display : flex;
-  justify-content: space-around;
+  justify-content: f
   flex-direction: row;
-  
-  
   list-style-type: none;
 }
