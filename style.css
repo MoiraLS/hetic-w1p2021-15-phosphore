@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -17,9 +18,18 @@ body {
   /* FOOTER */
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 130px;
   background-color: #801010;
-  
+  color: white;
+  padding: 20px;
+}
+
+.picto {
+  width: 40px;
 }
 
 ul {
