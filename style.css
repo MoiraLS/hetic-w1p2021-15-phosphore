@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Vagron";
-  src: local("VAGRON.TTF") format("TTF");
+  src: local("vagron.TTF") format("TTF");
         }
 
 body {
@@ -191,6 +191,9 @@ footer p {
   font-family: 'Fredoka One', sans-serif;
   font-size: 10px;
 }
+
+
+/
 
 @media(min-width: 900px) {
   
