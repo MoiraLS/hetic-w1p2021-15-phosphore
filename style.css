@@ -55,10 +55,15 @@ h3 {
 figcaption {
   background-color: #262626;
   font-family: 'Fredoka One', sans-serif;
+  height: 30px;
+  padding-top: 15px;
+  text-align: center;
+  margin-top: -5px; 
 }
 
 figcaption a {
   color: white;
+  
 }
 
 a {
@@ -66,6 +71,79 @@ a {
   color: white;
 }
 
+/*-- ACTUALITÉS */
+.pintro {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size:13px;
+  height: 80px;
+padding-top:30px;
+}
+.imgactu {
+  width :100%;
+}
+
+h4 {
+  background-color: #262626;
+  font-family: 'Fredoka One', sans-serif;
+  text-align: center;
+  margin-top: -3px;
+  padding-top: 30px;
+}
+
+.pactu {
+  background-color: #262626;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  height: 80px;
+  padding: 30px 25px 0px 25px;
+  font-size:13px;
+  text-align:justify;
+}
+.marge {
+  background-color: #801010;
+  height :15px;
+}
+/* FOOTER */
+
+footer {
+  height: 100px;
+  background-color: #801010;
+  color: white;
+  padding: 20px;
+}
+
+.pfoot {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pictos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top : 15px;
+}
+
+.picto {
+  width: 35px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+footer p {
+  text-align: center;
+}
+
+.end {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 10px;
+}
 
 @media(min-width: 900px) {
   
