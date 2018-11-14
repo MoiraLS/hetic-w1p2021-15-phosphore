@@ -27,10 +27,12 @@ body {
 
 h2, h3 {
   text-align: center;
+  font-family: 'Fredoka One', sans-serif;
 }
 
 h2 {
   font-size: 60px;
+  opacity: 0.8;
   
 
 }
