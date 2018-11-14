@@ -12,15 +12,24 @@ body {
   position: absolute;
   top: 0;
 }
+  
+nav {
+  display: inline;
+  align-items: flex-end;
+}
+  
+nav ul {
+  list-style: none;
+}
+  
+nav li {
+  margin-right: 40px;
+  font-family: 'Fredoka One', sans-serif;
+  float: right;
+  font-size: 20px;
+}  
 
   /* CONTENU */
-
-li {
- font-family: 'Fredoka One', sans-serif;
- float: right;
- display: flex;
- justify-content: space-between;  
-}
   
 h2, h3 {
   text-align: center;
@@ -79,9 +88,10 @@ footer {
   width: 40px;
 }
 
-ul {
+footer ul {
   display : flex;
   justify-content: space-around;
+  flex-direction: row;
   
   
   list-style-type: none;
