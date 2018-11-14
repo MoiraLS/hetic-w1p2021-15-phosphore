@@ -66,14 +66,13 @@ figcaption {
   background-color: #262626;
   height: 60px;
 }
+
 button {
   height: 50px;
   background-color: #801010;
   width: 30%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 20px 8px;
+  /* tu peux écrire:   padding: 20px 8px; */
   color: white;
   font-size: 8px;
   text-align: center;
@@ -82,9 +81,9 @@ button {
   margin-left: 35%;  
 }
 
-button:hover {
+button a:hover {
   cursor: cell;
-  color: black;
+  font-size: 15px;
 }
 
 a {
