@@ -15,15 +15,6 @@ body {
   top: 0;
 }
 
-@media (max-width: 320px) {
-  .home {
-    background-image: url(images/bg-Intro.png);
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-}
 
 nav ul {
   display: flex;
