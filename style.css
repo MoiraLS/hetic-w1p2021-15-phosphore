@@ -14,7 +14,7 @@ body {
   top: 0;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .home {
     height: 750px;
   }
