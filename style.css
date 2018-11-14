@@ -4,16 +4,16 @@ body {
 }
 /* HEADER */
 
-
 .home {
   background-image: url(images/bg-Intro.png);
-  background-size : 850px;
+  background-size : cover;
   background-position: center;
 
-  height: 480px;
+  height: 100vh;
+  width: 100vw;
   color: white;
-  position: absolute;
   top: 0;
+  position: absolute; 
 }
 
 .logo {
@@ -35,11 +35,35 @@ h2 {
   font-size: 20px;
   opacity: 0.8;
 }
-.produits {
-  margin-top: 490px;
+
+h3 {
+  background-color: #262626;
+  font-size: 15px;
+  color: white;
+  height: 30px;
+  padding-top: 15px;
+  
 }
-img {
-  width : 30%;
+.produits {
+  margin-top: 480px;
+}
+
+.imgprod {
+  width : 100%;
+  
+}
+figcaption {
+  background-color: #262626;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+figcaption a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 
