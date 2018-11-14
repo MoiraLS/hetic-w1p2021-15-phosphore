@@ -39,7 +39,7 @@ nav li {
     font-size: 60px;
     opacity: 0.8;
   }
-  
+
   .produits {
     display: grid;
     grid-template-rows: 600px 600px;
@@ -109,16 +109,17 @@ nav li {
     height: 130px;
     background-color: #801010;
     color: white;
-    padding: 20px;
+    padding: 20px; 
   }
   
   .pictos {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
   .picto {
-    width: 40px;
+    width: 35px;
   }
   
   footer ul {
