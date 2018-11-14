@@ -3,8 +3,13 @@ body {
   box-sizing: border-box;
 }
 
-  /* HEADER */
+/* HEADER */
 
+@media (max-width: 320px) {
+  .home {
+    height: 430;
+  }
+}
 .home {
   background-image: url(images/bg-Intro.png);
   height: 750px;
@@ -12,85 +17,69 @@ body {
   position: absolute;
   top: 0;
 }
-  
+
+@media (max-width: 320px) {
+   .home {
+    height: 1024px; 
+    
+
+
 nav ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
 }
-  
+
 nav li {
   display: inline-block;
-	margin-right: 20px;
-	text-align: right;
+  margin-right: 20px;
+  text-align: right;
   margin-right: 40px;
   font-family: 'Fredoka One', sans-serif;
   font-size: 20px;
 }
-nav li a {
-  color: white;
-}
 
-  /* CONTENU */
-  
-h2, h3 {
+
+
+/* CONTENU */
+
+h2,h3 {
   text-align: center;
   font-family: 'Fredoka One', sans-serif;
 }
-  
+
 h2 {
   margin-top: 100px;
   font-size: 60px;
   opacity: 0.8;
 }
 
-.produits {
-  display: grid;
-  grid-template-rows: 100px 600px 600px;
-  grid-template-columns: 600px 600px;
+.titre_produits {
+  margin-top: 780px;
+}
+
+.ligne1, .ligne2 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  grid-column-gap: 90px;
-  margin-top: 750px;
 }
-  
+
 .titre_produits {
-  grid-row: 1;
-  grid-column: 1 / span 3;
+  text-align: center;
 }
-  
-.prod1 {
-  grid-row: 2;
-  grid-column: 1;
-}
-    
-.prod2 {
-  grid-row: 2;
-  grid-column: 2;  
-}
-    
-.prod3 {
-  grid-row: 3;
-  grid-column: 1;
-}
-    
-.prod4 {
-  grid-row: 3;
-  grid-column: 2;
-}
-    
-.imgprod{
+
+.imgprod {
   width: 600px;
 }
-    
+
 figure {
   width: 600px;
 }
-    
+
 img {
   width: 400px;
 }
-    
+
 figcaption {
   background-color: #262626;
   text-align: center;
@@ -98,29 +87,29 @@ figcaption {
   margin-top: -10px;
   padding-top: 20px;
 }
-    
+
 figcaption a {
   color: white;
 }
-    
+
 a {
   text-decoration: none;
   color: white;
 }
-    
+
 a:hover {
   color: #801010;
 }
 
-  /* FOOTER */
+/* FOOTER */
 
 footer {
   height: 130px;
   background-color: #801010;
   color: white;
-  padding: 20px; 
+  padding: 20px;
 }
-  
+
 .pictos {
   display: flex;
   justify-content: center;
@@ -131,14 +120,18 @@ footer {
 .picto {
   width: 35px;
 }
-  
+
 footer ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
-  
+
 footer p {
   text-align: center;
+}
+
+.end {
+  font-size: 10px;
 }
