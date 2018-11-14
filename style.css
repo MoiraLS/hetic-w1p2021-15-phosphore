@@ -1,0 +1,27 @@
+body {
+  box-sizing: border-box;
+}
+
+  /* HEADER */
+
+
+
+
+
+  /* CONTENU */
+
+
+
+
+
+  /* FOOTER */
+
+footer {
+  height: 130px;
+  background-color: #801010;
+  
+}
+
+ul {
+  list-style-type: none;
+}
