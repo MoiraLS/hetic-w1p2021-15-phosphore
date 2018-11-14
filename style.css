@@ -3,6 +3,14 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'VAG Rounded BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('VAG Rounded BT'), url('VAGRON.woff') format('woff');
+  }
+
+
   /* HEADER */
 
 .home {
@@ -14,27 +22,39 @@ body {
 
 
 
+
   /* CONTENU */
 
-h3 {
+h2, h3 {
   text-align: center;
+  font-family: 'VAG Rounded BT';
 }
 
+h2 {
+  font-size: 60px;
+  
+
+}
 
 
   /* FOOTER */
 
 footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: space-around;
+  flex-direction: row;
   height: 130px;
   background-color: #801010;
   color: white;
   padding: 20px;
 }
 
+.pictos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .picto {
   width: 40px;
 }
