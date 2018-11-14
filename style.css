@@ -3,14 +3,6 @@ body {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'VAG Rounded BT';
-  font-style: normal;
-  font-weight: normal;
-  src: local('VAG Rounded BT'), url('VAGRON.woff') format('woff');
-  }
-
-
   /* HEADER */
 
 .home {
@@ -21,10 +13,15 @@ body {
   top: 0;
 }
 
-
-
   /* CONTENU */
 
+li {
+ font-family: 'Fredoka One', sans-serif;
+ float: right;
+ display: flex;
+ justify-content: space-between;  
+}
+  
 h2, h3 {
   text-align: center;
   font-family: 'Fredoka One', sans-serif;
@@ -39,12 +36,16 @@ h2 {
   margin-top: 750px;
 }
 
-.ligne1 {
-  
+figure {
+  width: 400px;
 }
 
 img {
-  width: 500px;
+  width: 400px;
+}
+
+figcaption {
+  background-color: #262626;
 }
 
 a {
@@ -79,5 +80,9 @@ footer {
 }
 
 ul {
+  display : flex;
+  justify-content: space-around;
+  
+  
   list-style-type: none;
 }
