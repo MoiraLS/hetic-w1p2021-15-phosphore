@@ -17,9 +17,9 @@ body {
   background-image: url(images/bg-Intro.png);
   height: 750px;
   color: white;
+  position: absolute;
+  top: 0;
 }
-
-
 
 
 
@@ -33,10 +33,28 @@ h2, h3 {
 h2 {
   font-size: 60px;
   opacity: 0.8;
-  
-
 }
 
+.produit {
+  margin-top: 750px;
+}
+
+.ligne1 {
+  
+}
+
+img {
+  width: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #801010;
+}
 
   /* FOOTER */
 
