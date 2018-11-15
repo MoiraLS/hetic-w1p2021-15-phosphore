@@ -160,7 +160,7 @@ header.is-open .close {
     background: none;
     position: fixed;
     padding-top: 10px;
-
+    height: 50px;
   }
 
   .menu li {
@@ -175,6 +175,12 @@ header.is-open .close {
     justify-content: flex-end;
     flex-direction: row;
 
+
+  }
+
+  .is-light .menu {
+    background: white;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.262);
 
   }
 
@@ -210,7 +216,6 @@ header.is-open .close {
   header.is-light {
     background: #fff;
     height: 55px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.262);
   }
 
   header.is-light .menu-toggle {
@@ -294,7 +299,7 @@ button {
 button:hover {
   cursor: cell;
   font-size: 18px;
-  background-color: #a11515;
+  background-color: #721313;
 }
 
 a {
