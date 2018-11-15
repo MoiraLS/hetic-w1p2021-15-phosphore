@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -15,6 +17,8 @@ body {
   top: 0;
   position: absolute; 
 }
+
+@media()
 
 .logo {
   width: 50%;
@@ -62,12 +66,11 @@ h3 {
   color: white;
   height: 30px;
   padding-top: 15px;
+  
 }
-
 .produits {
   margin-top: 480px;
 }
-
 figcaption{
   background-color: black;
   font-family: 'Fredoka One', sans-serif;
@@ -102,38 +105,12 @@ button {
 button:hover {
   cursor: cell;
   font-size: 15px;
+  
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-/* PRODUITS */
-
-.ptitre {
-  font-family : 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
- p {
-  font-family : 'Open Sans', sans-serif;
-  font-size: 13px;
-  text-align: justify;
-  padding: 10px 30px 0px 30px;
-  line-height: 16px;
- }
-
- li {
-font-family : 'Open Sans', sans-serif;
-font-size: 13px;
-text-align: justify;
-line-height: 17px;
-padding: 5px 30px 0px 30px;
- }
-
- .imgprod{
-  width : 100%;
 }
 
 /*-- ACTUALITÉS */
@@ -171,7 +148,6 @@ h4 {
   background-color: #801010;
   height :15px;
 }
-
 /* FOOTER */
 
 footer {
@@ -212,6 +188,34 @@ footer p {
   font-family: 'Fredoka One', sans-serif;
   font-size: 10px;
 }
+
+
+/* PRODUITS */
+.ptitre {
+  font-family : 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+ p {
+  font-family : 'Open Sans', sans-serif;
+  font-size: 13px;
+  text-align: justify;
+  padding: 10px 30px 0px 30px;
+  line-height: 16px;
+ }
+
+ li {
+font-family : 'Open Sans', sans-serif;
+font-size: 13px;
+text-align: justify;
+line-height: 17px;
+padding: 5px 30px 0px 30px;
+ }
+
+ .imgprod{
+  width : 100%;
+}
+
 
 
 @media(min-width: 900px) {
