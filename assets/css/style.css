@@ -122,7 +122,6 @@ body {
   transform: scale(0, 1);
 }
 
-
 .smooth-home:hover:after,
 .prod:hover:after,
 .smooth-actu:hover:after {
@@ -162,8 +161,6 @@ header.is-open .open {
 header.is-open .close {
   display: block;
 }
-
-
 
 .left-li {
   font-family: 'VAG Rounded', sans-serif;
@@ -265,8 +262,6 @@ h4 {
 
 .imgintro {
   width: 100%;
-  margin-top: -60px;
-  border-radius: 0;
 }
 
 p,
@@ -336,11 +331,11 @@ h5 {
 }
 
 .cartes {
-  color:rgba(128, 16, 16, 0.797);
-font-family: "VAG Rounded", sans-serif;
+  color: rgba(128, 16, 16, 0.797);
+  font-family: "VAG Rounded", sans-serif;
 }
 
-.cartes:hover{
+.cartes:hover {
   text-decoration: underline;
   color: #000
 }
@@ -507,6 +502,10 @@ footer p {
     margin: 0px 100px;
   }
 
+  .imgintro {
+    margin-top: -60px;
+    border-radius: 0;
+  } 
   /* ---------- ARTICLE ---------- */
 
   .art1,
