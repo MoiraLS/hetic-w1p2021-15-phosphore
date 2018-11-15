@@ -28,13 +28,13 @@ body {
   src: url("../font/Lato/Lato-Semibold.ttf");
 }
 
-/* HEADER */
+    /* ----------- HEADER ----------- */
 
 .home {
   background: url(../images/bg-intro.png);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 480px;
   width: 100vw;
   color: white;
   top: 0;
@@ -64,7 +64,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 100px;
-  background-color: #801010;
+  background-color: rgba(128, 16, 16, 0.797);
   transform: translateX(-100%);
   transition: transform .6s ease-in-out;
 }
@@ -82,15 +82,35 @@ body {
   justify-content: space-between;
 
 }
-
-.menu a:after {
+.left-li:after{
   content: '';
   left: 0;
   display: inline-block;
   height: 1em;
   width: 100%;
   border-bottom: 3px solid;
-  margin-top: -2px;
+  margin-top: -20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+.left-li:hover:after{
+  opacity: 1;
+  color: rgb(137, 230, 61);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.smooth-home:after,
+.prod:after,
+.smooth-actu:after {
+  content: '';
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 3px solid;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -98,7 +118,10 @@ body {
   transform: scale(0, 1);
 }
 
-.menu a:hover:after {
+
+.smooth-home:hover:after,
+.prod:hover:after,
+.smooth-actu:hover:after {
   opacity: 1;
   color: rgb(137, 230, 61);
   -webkit-transform: scale(1);
@@ -143,37 +166,35 @@ header.is-open .close {
   font-size: 40px;
 }
 
-/* CONTENU */
+  /* ----------- CONTENU ----------- */
 
+.h2 {
+  text-align: center;
+}
 .h2_1 {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  text-align: center;
-  margin-top: 80px;
 }
 
 .h2_2 {
   font-family: 'VAG Rounded', sans-serif;
   font-size: 20px;
-  text-align: center;
 }
 
 h3 {
-  text-align: center;
   font-family: 'VAG Rounded', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px;
+  background-color: black;
+  color: white;
 }
 
 h2 {
   margin: 50px;
   font-size: 20px;
-}
-
-h3 {
-  background-color: black;
-  font-size: 20px;
-  color: white;
-  height: 30px;
-  padding: 28px 0px 10px 0px;
 }
 
 .produits {
@@ -190,6 +211,10 @@ figcaption,
   font-size: 16px;
 }
 
+.titre {
+  font-size: 24px;
+  padding-top: 60px;
+}
 .bouton {
   background-color: white;
   height: 60px;
@@ -222,7 +247,7 @@ a {
   color: white;
 }
 
-/* PRODUITS */
+/* ----------- PRODUITS ----------- */
 
 h4 {
   text-align: center;
@@ -272,7 +297,7 @@ img {
   padding: 10px 40px 15px 40px;
 }
 
-/*-- ACTUALITÉS */
+    /* ----------- ACTUALITÉS ----------- */
 
 .dim2 {
   font-family: "Lato SemiBold", sans-serif;
@@ -282,7 +307,7 @@ img {
 
 .actu_intro {
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato Black', sans-serif;
   font-size: 14px;
   padding: 20px;
 }
@@ -302,7 +327,7 @@ h5 {
   text-align: justify;
 }
 
-/* FOOTER */
+    /* ----------- FOOTER ----------- */
 
 footer {
   background-color: #a11515;
@@ -375,8 +400,6 @@ footer p {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-
-
   }
 
   .is-light .menu {
@@ -427,14 +450,17 @@ footer p {
     color: black
   }
   img {
-    width: 50%;
+    width: 20%;
+  }
+  h4 {
+    font-size: 25px;;
   }
   .h2_1, .h2_2 {
     margin-top: 14%;
     font-size: 50px;
   }
   .h2_2 {
-    margin-top: 15%;
+    margin-top: -2%;
   }
   .produits {
     margin-top: 750px;
@@ -454,7 +480,8 @@ footer p {
   .art2 {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    flex-grow: 20px;
   }
   .article {
     display: flex;
@@ -463,10 +490,28 @@ footer p {
     flex-direction: column;
     height: 400px;
   }
+  .actu_intro {
+    font-size: 20px;
+    margin: 40px 40px 0px ;
+    line-height: 25px;  
+  }
   .phomepage {
     text-align: center;
     font-size: 16px;
     line-height: 22px;
+    min-height: 155px;
+  }
+
+  .phomepage1 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 90px;
+  }
+
+  .phomepage2 {
+    font-size: 16px;
+    text-align: center;    
   }
   
   img {
@@ -476,8 +521,7 @@ footer p {
   }
 
   .art {
-    width: 50%;
-    height: 60%;
+    width: 60%;
   }
 
   button {
@@ -489,7 +533,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    flex-grow: 100px;
+    flex-grow: 150px;
   }
 
   .ligne {
@@ -497,6 +541,16 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0px 100px;  
+    margin: 0px 50px;  
+  }
+}
+
+@media (min-width: 1200px) {
+  .phomepage,
+  .phomepage1 {
+    min-height: 50px;
+  }
+  .h2_2 {
+    margin-top: -2%;
   }
 }

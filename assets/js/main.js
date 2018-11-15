@@ -152,27 +152,37 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
     scroll();
   }
   
-  // Scroll to section 1
+    // Playmobil
+    document.querySelector('.left-li').addEventListener('click', () => {
+        scrollIt(
+          document.querySelector('.home'),
+          800,
+          'easeOutQuad',
+          () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+        );
+      });
+      
+  // Accueil
   document.querySelector('.smooth-home').addEventListener('click', () => {
     scrollIt(
       document.querySelector('.home'),
-      300,
+      800,
       'easeOutQuad',
       () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
     );
   });
   
-  // Scroll to section 2
-  document.querySelector('.smooth-prod').addEventListener('click', () => {
+  // Produits
+  document.querySelector('.prod').addEventListener('click', () => {
     scrollIt(
-      document.querySelector('produits'),
-      300,
+      document.querySelector('.produits'),
+      800,
       'easeOutQuad',
       () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
     );
   });
   
-  // Scroll to section 3
+  // Actualités
   document.querySelector('.smooth-actu').addEventListener('click', () => {
     scrollIt(
       document.querySelector('.actu'),
@@ -182,25 +192,7 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
     );
   });
   
-  // Scroll to 500px from top
-  document.querySelector('.js-btn500').addEventListener('click', () => {
-    scrollIt(
-      500,
-      300,
-      'easeOutQuad',
-      () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
-    );
-  });
   
-  // Scroll to 50000px from top (on purpose longer than document)
-  document.querySelector('.js-btn50000').addEventListener('click', () => {
-    scrollIt(
-      50000,
-      300,
-      'easeOutQuad',
-      () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
-    );
-  });
   
   
   
