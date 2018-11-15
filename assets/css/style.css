@@ -241,15 +241,12 @@ button:hover {
   cursor: cell;
   font-size: 18px;
   background-color: #721313;
-  cursor : url(http://www.geekgeneration.fr/wp-content/uploads/2016/06/Ghostbusters-Ecto-Force.png), auto;
 
  }
 
 a {
   text-decoration: none;
-  color: white;
-  cursor : url(http://www.geekgeneration.fr/wp-content/uploads/2016/06/Ghostbusters-Ecto-Force.png), auto;
-  
+  color: white;  
 
 }
 
@@ -337,6 +334,10 @@ h5 {
     /* ----------- FOOTER ----------- */
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #a11515;
   color: white;
   padding: 20px;
@@ -348,19 +349,12 @@ footer {
 
 .pictos {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
 .picto {
   width: 35px;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
 }
 
 footer p {
@@ -372,7 +366,7 @@ footer p {
   font-size: 10px;
 }
 
-    /* ----------- DESKTOP ----------- */
+    /* ----------- MEDIA QUERY ----------- */
 
 @media (min-width: 720px) {
   
@@ -604,6 +598,9 @@ footer p {
 }
 
 @media (min-width: 1200px) {
+  
+    /* ---------- ARTICLES ---------- */
+
   .phomepage,
   .phomepage1 {
     min-height: 50px;
@@ -611,6 +608,7 @@ footer p {
   .h2_2 {
     margin-top: -2%;
   }
+  
   .grid,
   .grid1 {
     grid-template-rows: 500px;
