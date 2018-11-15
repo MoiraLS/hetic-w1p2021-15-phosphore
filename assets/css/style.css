@@ -455,6 +455,8 @@ footer p {
   }
   .article {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .phomepage {
@@ -469,7 +471,7 @@ footer p {
   }
 
   .art {
-    width: 30%;
+    width: 40%;
   }
   
   figcaption {
@@ -477,7 +479,8 @@ footer p {
   }
 
   button {
-    width: 150px;  
+    margin: 0;
+    width: 200px;  
   }  
 
   .ligne1, .ligne2 {
@@ -490,6 +493,7 @@ footer p {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
+    margin: 0px 100px;  
   }
 }
