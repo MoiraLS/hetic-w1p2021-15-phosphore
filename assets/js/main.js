@@ -155,7 +155,7 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
   // Scroll to section 1
   document.querySelector('.smooth-home').addEventListener('click', () => {
     scrollIt(
-      document.querySelector('home'),
+      document.querySelector('.home'),
       300,
       'easeOutQuad',
       () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
@@ -173,10 +173,10 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
   });
   
   // Scroll to section 3
-  document.querySelector('.js-btn3').addEventListener('click', () => {
+  document.querySelector('.smooth-actu').addEventListener('click', () => {
     scrollIt(
-      document.querySelector('.js-section3'),
-      300,
+      document.querySelector('.actu'),
+      800,
       'easeOutQuad',
       () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
     );
