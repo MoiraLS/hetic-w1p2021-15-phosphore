@@ -28,9 +28,9 @@ body {
   src: url("../font/Lato/Lato-Semibold.ttf");
 }
 
-    /* ----------- HEADER ----------- */
+/* ----------- HEADER ----------- */
 
-    
+
 .home {
   background: url(../images/bg-intro.png);
   background-size: cover;
@@ -83,7 +83,8 @@ body {
   justify-content: space-between;
 
 }
-.left-li:after{
+
+.left-li:after {
   content: '';
   left: 0;
   display: inline-block;
@@ -97,12 +98,14 @@ body {
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-.left-li:hover:after{
+
+.left-li:hover:after {
   opacity: 1;
   color: rgb(137, 230, 61);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
 .smooth-home:after,
 .prod:after,
 .smooth-actu:after {
@@ -167,11 +170,12 @@ header.is-open .close {
   font-size: 40px;
 }
 
-  /* ----------- CONTENU ----------- */
+/* ----------- CONTENU ----------- */
 
 .h2 {
   text-align: center;
 }
+
 .h2_1 {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -242,11 +246,11 @@ button:hover {
   font-size: 18px;
   background-color: #721313;
 
- }
+}
 
 a {
   text-decoration: none;
-  color: white;  
+  color: white;
 
 }
 
@@ -301,7 +305,7 @@ img {
   padding: 10px 40px 15px 40px;
 }
 
-    /* ----------- ACTUALITÉS ----------- */
+/* ----------- ACTUALITÉS ----------- */
 
 .dim2 {
   font-family: "Lato SemiBold", sans-serif;
@@ -331,7 +335,18 @@ h5 {
   text-align: justify;
 }
 
-    /* ----------- FOOTER ----------- */
+.cartes {
+  color:rgba(128, 16, 16, 0.797);
+font-family: "VAG Rounded", sans-serif;
+}
+
+.cartes:hover{
+  text-decoration: underline;
+  color: #000
+}
+
+
+/* ----------- FOOTER ----------- */
 
 footer {
   display: flex;
@@ -366,12 +381,12 @@ footer p {
   font-size: 10px;
 }
 
-    /* ----------- MEDIA QUERY ----------- */
+/* ----------- MEDIA QUERY ----------- */
 
 @media (min-width: 720px) {
-  
+
   /* ---------- MENU & HEADER ---------- */
-  
+
   header {
     top: 0;
   }
@@ -451,16 +466,22 @@ footer p {
   .home2 {
     color: black
   }
+
   img {
     width: 20%;
   }
+
   h4 {
-    font-size: 25px;;
+    font-size: 25px;
+    ;
   }
-  .h2_1, .h2_2 {
+
+  .h2_1,
+  .h2_2 {
     margin-top: 14%;
     font-size: 50px;
   }
+
   .h2_2 {
     margin-top: -2%;
   }
@@ -506,8 +527,8 @@ footer p {
 
   .actu_intro {
     font-size: 20px;
-    margin: 40px 40px 0px ;
-    line-height: 25px;  
+    margin: 40px 40px 0px;
+    line-height: 25px;
   }
 
   .phomepage {
@@ -526,9 +547,9 @@ footer p {
 
   .phomepage2 {
     font-size: 16px;
-    text-align: center;    
+    text-align: center;
   }
-  
+
   img {
     width: 90%;
     height: 70%;
@@ -537,20 +558,23 @@ footer p {
 
   .grid {
     display: grid;
-    grid-template-rows: 300px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 350px;
+    grid-template-columns: 35% 35% 35%;
     align-items: center;
     justify-content: center;
     grid-row-gap: 50px;
   }
+
   .grid::nth-child(1) {
     grid-row: 1;
     grid-column: 1;
   }
+
   .grid::nth-child(2) {
     grid-row: 1;
-    grid-column: 2;    
+    grid-column: 2;
   }
+
   .grid::nth-child(3) {
     grid-row: 1;
     grid-column: 3;
@@ -558,15 +582,17 @@ footer p {
 
   .grid1 {
     display: grid;
-    grid-template-rows: 300px;
-    grid-template-columns: 40% 40%;
+    grid-template-rows: 400px;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     grid-row-gap: 50px;
   }
+
   .grid1::nth-child(1) {
     grid-row: 1;
     grid-column: 1;
   }
+
   .grid1::nth-child(2) {
     grid-row: 1;
     grid-column: 2;
@@ -578,10 +604,11 @@ footer p {
 
   button {
     margin: 0;
-    width: 200px;  
-  }  
+    width: 200px;
+  }
 
-  .ligne1, .ligne2 {
+  .ligne1,
+  .ligne2 {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -593,24 +620,39 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0px 50px;  
+    margin: 0px 50px;
   }
 }
 
 @media (min-width: 1200px) {
-  
-    /* ---------- ARTICLES ---------- */
+
+  /* ---------- ARTICLES ---------- */
 
   .phomepage,
   .phomepage1 {
     min-height: 50px;
   }
+
   .h2_2 {
     margin-top: -2%;
   }
-  
+
+  .dim2 {
+    font-size: 20px;
+  }
+
+  p,
+  li {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
   .grid,
   .grid1 {
-    grid-template-rows: 500px;
+    grid-template-rows: 600px;
   }
 }
