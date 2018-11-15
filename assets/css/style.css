@@ -13,10 +13,20 @@ body {
   src: url("../font/aaargh.ttf");
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../font/Lato/Lato-Light.ttf");  
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url("../font/Lato/Lato-Mediumttf");
+}
+
 /* HEADER */
 
 .home {
-  background-image: url(../images/bg-intro.png);
+  background: url(../images/bg-intro.png);
   background-size : cover;
   background-position: center;
   height: 500px;
@@ -54,7 +64,17 @@ nav li {
 
 /* CONTENU */
 
-h2,
+.h2_1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+.h2_2 {
+  font-family: 'VAG Rounded', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
 h3 {
   text-align: center;
   font-family: 'VAG Rounded', sans-serif;
@@ -63,47 +83,45 @@ h3 {
 h2 {
   margin: 50px;
   font-size: 20px;
-  opacity: 0.8;
 }
 
 h3 {
   background-color: black;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   height: 30px;
-  padding: 15px 0px 20px 0px;
+  padding: 28px 0px 10px 0px;
 }
 
 .produits {
   margin-top: 480px;
-  background-color: black;
 }
 
 figcaption{
-  background-color: black;
+  background-color: white;
   font-family: 'VAG Rounded', sans-serif;
   height: 40px;
-  padding-top: 20px;
+  padding-top: 28px;
   text-align: center;
   margin-top: -5px; 
-  color: white;
-  font-size: 13px;
+  color:black;
+  font-size: 16px;
 }
 
 .bouton {
-  background-color: black;
+  background-color: white;
   height: 60px;
+  padding : 15px 0px 15px 0px;
 }
 
 button {
   height: 50px;
   background-color: #801010;
-  width: 40%;
-  padding: 20px 8px 28px;
+  width: 45%;
+  padding: 16px 8px 25px;
   border-radius: 60px;
-  /* tu peux écrire:   padding: 20px 8px; */
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
   font-family: 'VAG Rounded';
   border: black;
@@ -113,7 +131,7 @@ button {
 
 button:hover {
   cursor: cell;
-  font-size: 15px;
+  font-size: 18px;
   background-color: #4e0a0a;
 }
 
@@ -123,6 +141,18 @@ a {
 }
 
 /* PRODUITS */
+
+h4{
+  text-align: center;
+  font-family: 'Lato Black', sans-serif;
+  font-size: 14px;
+  padding: 20px 0px 20px 0px;
+}
+
+
+.imgintro {
+  width: 100%;
+}
 
 .ptitre {
   font-family : 'Aaargh', sans-serif;
@@ -145,26 +175,27 @@ line-height: 17px;
 padding: 5px 30px 0px 30px;
  }
 
- .imgprod{
-  width : 100%;
+img {
+  width : 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phomepage {
+  padding: 10px 40px 15px 40px;
 }
 
 /*-- ACTUALITÉS */
 
-.pintro {
-  font-family: 'Aaargh', sans-serif;
+.actu_intro {
   text-align: center;
-  font-size:13px;
-  height: 80px;
-  padding-top:30px;
-  color : black;
-}
-.imgactu {
-  width :100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  padding: 20px;
 }
 
-h4 {
-  background-color: black;
+h5 {
   font-family: 'VAG Rounded', sans-serif;
   text-align: center;
   margin-top: -3px;
@@ -172,17 +203,11 @@ h4 {
 }
 
 .pactu {
-  background-color: black;
   font-family: 'Aaargh', sans-serif;
-  color: white;
   height: 80px;
   padding: 30px 25px 0px 25px;
   font-size:13px;
   text-align:justify;
-}
-.marge {
-  background-color: #801010;
-  height :15px;
 }
 
 /* FOOTER */
