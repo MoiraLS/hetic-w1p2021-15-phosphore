@@ -1,24 +1,30 @@
-
-
 body {
   margin: 0;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'VAG Rounded';
+  src: url("../font/vagron.ttf");
+}
+
+@font-face {
+  font-family: 'Aaargh';
+  src: url("../font/aaargh.ttf");
+}
+
 /* HEADER */
 
 .home {
-  background-image: url(images/bg-Intro.png);
+  background-image: url(../images/bg-intro.png);
   background-size : cover;
   background-position: center;
-  height: 480px;
+  height: 500px;
   width: 100vw;
   color: white;
   top: 0;
   position: absolute; 
 }
-
-@media()
 
 .logo {
   width: 50%;
@@ -51,7 +57,7 @@ nav li {
 h2,
 h3 {
   text-align: center;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'VAG Rounded', sans-serif;
 }
 
 h2 {
@@ -61,19 +67,21 @@ h2 {
 }
 
 h3 {
-  background-color:black;
+  background-color: black;
   font-size: 15px;
   color: white;
   height: 30px;
-  padding-top: 15px;
-  
+  padding: 15px 0px 20px 0px;
 }
+
 .produits {
   margin-top: 480px;
+  background-color: black;
 }
+
 figcaption{
   background-color: black;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'VAG Rounded', sans-serif;
   height: 40px;
   padding-top: 20px;
   text-align: center;
@@ -90,22 +98,23 @@ figcaption{
 button {
   height: 50px;
   background-color: #801010;
-  width: 30%;
-  padding: 20px 8px;
+  width: 40%;
+  padding: 20px 8px 28px;
+  border-radius: 60px;
   /* tu peux écrire:   padding: 20px 8px; */
   color: white;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
-  font-family: 'Fredoka One';
-  border: #262626;
-  margin-left: 35%; 
-  transition: font-size 1s;
+  font-family: 'VAG Rounded';
+  border: black;
+  margin-left: 30%; 
+  transition: font-size 0.3s;
 }
 
 button:hover {
   cursor: cell;
   font-size: 15px;
-  
+  background-color: #4e0a0a;
 }
 
 a {
@@ -113,10 +122,37 @@ a {
   color: white;
 }
 
+/* PRODUITS */
+
+.ptitre {
+  font-family : 'Aaargh', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+ p {
+  font-family : 'Aaargh', sans-serif;
+  font-size: 13px;
+  text-align: justify;
+  padding: 10px 30px 0px 30px;
+  line-height: 16px;
+ }
+
+ li {
+font-family : 'Aaargh', sans-serif;
+font-size: 13px;
+text-align: justify;
+line-height: 17px;
+padding: 5px 30px 0px 30px;
+ }
+
+ .imgprod{
+  width : 100%;
+}
+
 /*-- ACTUALITÉS */
 
 .pintro {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Aaargh', sans-serif;
   text-align: center;
   font-size:13px;
   height: 80px;
@@ -129,7 +165,7 @@ a {
 
 h4 {
   background-color: black;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'VAG Rounded', sans-serif;
   text-align: center;
   margin-top: -3px;
   padding-top: 30px;
@@ -137,7 +173,7 @@ h4 {
 
 .pactu {
   background-color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aaargh', sans-serif;
   color: white;
   height: 80px;
   padding: 30px 25px 0px 25px;
@@ -148,6 +184,7 @@ h4 {
   background-color: #801010;
   height :15px;
 }
+
 /* FOOTER */
 
 footer {
@@ -158,7 +195,7 @@ footer {
 }
 
 .pfoot {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aaargh', sans-serif;
 }
 
 .pictos {
@@ -185,40 +222,21 @@ footer p {
 }
 
 .end {
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'VAG Rounded', sans-serif;
   font-size: 10px;
 }
 
-
-/* PRODUITS */
-.ptitre {
-  font-family : 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
- p {
-  font-family : 'Open Sans', sans-serif;
-  font-size: 13px;
-  text-align: justify;
-  padding: 10px 30px 0px 30px;
-  line-height: 16px;
- }
-
- li {
-font-family : 'Open Sans', sans-serif;
-font-size: 13px;
-text-align: justify;
-line-height: 17px;
-padding: 5px 30px 0px 30px;
- }
-
- .imgprod{
-  width : 100%;
-}
-
-
-
 @media(min-width: 900px) {
-  
-
+  .home {
+    height: 750px;
+  }
+  .produits {
+    margin-top: 750px;
+  }
+  .ligne1,
+  .ligne2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
