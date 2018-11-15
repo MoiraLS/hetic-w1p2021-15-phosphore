@@ -262,6 +262,8 @@ h4 {
 
 .imgintro {
   width: 100%;
+  margin-top: -60px;
+  border-radius: 0;
 }
 
 p,
@@ -340,6 +342,9 @@ h5 {
   color: #000
 }
 
+section {
+  margin-bottom: 50px;
+}
 
 /* ----------- FOOTER ----------- */
 
@@ -502,10 +507,6 @@ footer p {
     margin: 0px 100px;
   }
 
-  .imgintro {
-    margin-top: -60px;
-    border-radius: 0;
-  } 
   /* ---------- ARTICLE ---------- */
 
   .art1,
@@ -644,10 +645,6 @@ footer p {
   li {
     font-size: 18px;
     line-height: 25px;
-  }
-
-  section {
-    margin-bottom: 50px;
   }
 
   .grid,
