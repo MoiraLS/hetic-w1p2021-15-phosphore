@@ -116,7 +116,7 @@ figcaption{
 
 button {
   height: 50px;
-  background-color: #801010;
+  background-color: #FE0005;
   width: 45%;
   padding: 16px 8px 25px;
   border-radius: 60px;
@@ -149,28 +149,26 @@ h4{
   padding: 20px 0px 20px 0px;
 }
 
-
 .imgintro {
   width: 100%;
 }
 
-.ptitre {
-  font-family : 'Aaargh', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
- p {
-  font-family : 'Aaargh', sans-serif;
-  font-size: 13px;
+ p,
+ li {
+  font-family : 'Lato', sans-serif;
+  font-size: 14px;
   text-align: justify;
   padding: 10px 30px 0px 30px;
   line-height: 16px;
  }
-
+.ptitre {
+  font-family : 'VAG Rounded', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: left;
+}
  li {
-font-family : 'Aaargh', sans-serif;
-font-size: 13px;
-text-align: justify;
 line-height: 17px;
 padding: 5px 30px 0px 30px;
  }
@@ -178,8 +176,7 @@ padding: 5px 30px 0px 30px;
 img {
   width : 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 20px auto;
 }
 
 .phomepage {
@@ -257,11 +254,5 @@ footer p {
   }
   .produits {
     margin-top: 750px;
-  }
-  .ligne1,
-  .ligne2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
