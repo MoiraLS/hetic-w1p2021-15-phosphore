@@ -45,12 +45,6 @@ body {
   width: 50%;
 }
 
-.logo2 {
-  width: 40%;
-  padding: 5px 10px;
-  background-color: black;
-}
-
 .burger {
   position: fixed;
   bottom: 10px;
@@ -188,15 +182,6 @@ header.is-open .close {
     color: #000;
   }
 
-  .logo {
-    width: 160px;
-    height: 20px;
-    padding-top: 20px;
-    background-image: url(images/playmobil-logo.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
   .visuallyhidden {
     position: absolute;
     width: 0;
@@ -205,13 +190,9 @@ header.is-open .close {
     visibility: hidden;
     pointer-events: none;
   }
-
-  .logo2 {
-    width: 40%;
-    padding: 5px 10px;
-    background-color: black;
+  .logo {
+    display: none;
   }
-
 
   header.is-light {
     background: #fff;
@@ -227,6 +208,10 @@ header.is-open .close {
   }
 }
 
+.left-li {
+  font-family: 'VAG Rounded', sans-serif;
+  font-size: 40px;
+}
 
 /* CONTENU */
 
@@ -318,6 +303,7 @@ h4 {
 
 .imgintro {
   width: 100%;
+  margin: 0;
 }
 
 p,
@@ -430,4 +416,10 @@ footer p {
   .produits {
     margin-top: 750px;
   }
+.logo {
+  display: none;
+}
+.home2 {
+  color:black
+}
 }
