@@ -15,7 +15,7 @@ body {
 
 @font-face {
   font-family: 'Lato';
-  src: url("../font/Lato/Lato-Light.ttf");  
+  src: url("../font/Lato/Lato-Light.ttf");
 }
 
 @font-face {
@@ -23,17 +23,22 @@ body {
   src: url("../font/Lato/Lato-Mediumttf");
 }
 
+@font-face {
+  font-family: 'Lato SemiBold';
+  src: url("../font/Lato/Lato-Semibold.ttf");
+}
+
 /* HEADER */
 
 .home {
   background: url(../images/bg-intro.png);
-  background-size : cover;
+  background-size: cover;
   background-position: center;
   height: 500px;
   width: 100vw;
   color: white;
   top: 0;
-  position: absolute; 
+  position: absolute;
 }
 
 .logo {
@@ -46,20 +51,176 @@ body {
   background-color: black;
 }
 
-/* nav ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
+.burger {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  height: 32px;
+  width: 100%;
+  transition: background-color .4s ease-in-out;
 }
 
-nav li {
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  background-color: #801010;
+  transform: translateX(-100%);
+  transition: transform .6s ease-in-out;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding-top: 100px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.menu a:after {
+  content: '';
+  left: 0;
   display: inline-block;
-  margin-right: 20px;
-  text-align: right;
-  margin-right: 40px;
-  font-family: 'Fredoka One', sans-serif;
-  font-size: 20px;
-} */
+  height: 1em;
+  width: 100%;
+  border-bottom: 3px solid;
+  margin-top: -2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.menu a:hover:after {
+  opacity: 1;
+  color: rgb(137, 230, 61);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  font-size: 50px;
+  color: #FFF;
+  background: #801010;
+  border-radius: 10px;
+}
+
+.menu-toggle .close {
+  display: none;
+}
+
+header.is-open .menu {
+  transform: translateX(0);
+}
+
+header.is-open .menu-toggle {
+  color: #fff;
+
+}
+
+header.is-open .open {
+  display: none;
+}
+
+header.is-open .close {
+  display: block;
+}
+
+@media (min-width: 720px) {
+
+  header {
+    top: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transform: none;
+    background: none;
+    position: fixed;
+    padding-top: 10px;
+
+  }
+
+  .menu li {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+
+  }
+
+  header.is-light .menu li a {
+    color: #000;
+  }
+
+  .logo {
+    width: 160px;
+    height: 20px;
+    padding-top: 20px;
+    background-image: url(images/playmobil-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .visuallyhidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .logo2 {
+    width: 40%;
+    padding: 5px 10px;
+    background-color: black;
+  }
+
+
+  header.is-light {
+    background: #fff;
+    height: 55px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.262);
+  }
+
+  header.is-light .menu-toggle {
+    color: #000;
+  }
+
+  header.is-light .logo {
+    background-image: url(images/playmobil-logo-dark.svg);
+  }
+}
 
 
 /* CONTENU */
@@ -70,11 +231,13 @@ nav li {
   text-align: center;
   margin-top: 80px;
 }
+
 .h2_2 {
   font-family: 'VAG Rounded', sans-serif;
   font-size: 20px;
   text-align: center;
 }
+
 h3 {
   text-align: center;
   font-family: 'VAG Rounded', sans-serif;
@@ -97,26 +260,25 @@ h3 {
   margin-top: 480px;
 }
 
-figcaption{
-  background-color: white;
+figcaption,
+.titre {
   font-family: 'VAG Rounded', sans-serif;
   height: 40px;
   padding-top: 28px;
   text-align: center;
-  margin-top: -5px; 
-  color:black;
+  margin-top: -5px;
   font-size: 16px;
 }
 
 .bouton {
   background-color: white;
   height: 60px;
-  padding : 15px 0px 15px 0px;
+  padding: 15px 0px 15px 0px;
 }
 
 button {
   height: 50px;
-  background-color: #FE0005;
+  background-color: #a11515;
   width: 45%;
   padding: 16px 8px 25px;
   border-radius: 60px;
@@ -125,14 +287,14 @@ button {
   text-align: center;
   font-family: 'VAG Rounded';
   border: black;
-  margin-left: 30%; 
+  margin-left: 30%;
   transition: font-size 0.3s;
 }
 
 button:hover {
   cursor: cell;
   font-size: 18px;
-  background-color: #4e0a0a;
+  background-color: #a11515;
 }
 
 a {
@@ -142,7 +304,7 @@ a {
 
 /* PRODUITS */
 
-h4{
+h4 {
   text-align: center;
   font-family: 'Lato Black', sans-serif;
   font-size: 14px;
@@ -153,28 +315,30 @@ h4{
   width: 100%;
 }
 
- p,
- li {
-  font-family : 'Lato', sans-serif;
+p,
+li {
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
   text-align: justify;
   padding: 10px 30px 0px 30px;
   line-height: 16px;
- }
+}
+
 .ptitre {
-  font-family : 'VAG Rounded', sans-serif;
+  font-family: 'VAG Rounded', sans-serif;
   font-size: 16px;
   font-weight: bold;
   padding-top: 30px;
   text-align: left;
 }
- li {
-line-height: 17px;
-padding: 5px 30px 0px 30px;
- }
+
+li {
+  line-height: 17px;
+  padding: 5px 30px 0px 30px;
+}
 
 img {
-  width : 80%;
+  width: 80%;
   display: block;
   margin: 20px auto 20px auto;
 }
@@ -184,6 +348,12 @@ img {
 }
 
 /*-- ACTUALITÉS */
+
+.dim2 {
+  font-family: "Lato SemiBold", sans-serif;
+  text-align: center;
+  color: #a11515;
+}
 
 .actu_intro {
   text-align: center;
@@ -203,21 +373,20 @@ h5 {
   font-family: 'Aaargh', sans-serif;
   height: 80px;
   padding: 30px 25px 0px 25px;
-  font-size:13px;
-  text-align:justify;
+  font-size: 13px;
+  text-align: justify;
 }
 
 /* FOOTER */
 
 footer {
-  height: 100px;
-  background-color: #801010;
+  background-color: #a11515;
   color: white;
   padding: 20px;
 }
 
 .pfoot {
-  font-family: 'Aaargh', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .pictos {
@@ -225,7 +394,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  padding-top : 15px;
+  padding-top: 15px;
 }
 
 .picto {
@@ -252,6 +421,7 @@ footer p {
   .home {
     height: 750px;
   }
+
   .produits {
     margin-top: 750px;
   }
